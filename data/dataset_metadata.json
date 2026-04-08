@@ -1,0 +1,20 @@
+{
+  "app_name": "Wysa",
+  "app_id": "bot.touchkin",
+  "dataset_size_raw": 3000,
+  "dataset_size_cleaned": 2437,
+  "collection_method": "Google Play Scraper (google-play-scraper Python library)",
+  "date_collected": "2026-04-05",
+  "cleaning_steps": [
+    "Removed duplicate reviews",
+    "Removed empty reviews",
+    "Removed very short reviews (less than 3 words)",
+    "Converted text to lowercase",
+    "Converted numbers to words",
+    "Removed punctuation and special characters",
+    "Removed emojis",
+    "Removed extra whitespace",
+    "Removed stopwords using NLTK",
+    "Lemmatized words using WordNetLemmatizer"
+  ]
+}

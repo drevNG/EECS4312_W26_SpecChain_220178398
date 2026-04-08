@@ -1,16 +1,137 @@
-
 {
   "tests": [
     {
-      "test_id": "T_auto_1",
+      "test_id": "T1",
       "requirement_id": "FR1",
-      "scenario": "Workout Logging Stability",
+      "scenario": "Supportive Response for Anxiety",
       "steps": [
-        "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
+        "Open the app",
+        "Enter a message expressing anxiety",
+        "Submit the message"
       ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
+      "expected_result": "The system responds with supportive language and includes at least one coping suggestion."
+    },
+    {
+      "test_id": "T2",
+      "requirement_id": "FR2",
+      "scenario": "Immediate Response Availability",
+      "steps": [
+        "Open the app",
+        "Start a new conversation",
+        "Send a message"
+      ],
+      "expected_result": "The system responds within 2 seconds."
+    },
+    {
+      "test_id": "T3",
+      "requirement_id": "FR3",
+      "scenario": "Context-Aware Response",
+      "steps": [
+        "Open the app",
+        "Enter a message describing a specific issue (e.g., stress at work)",
+        "Submit the message"
+      ],
+      "expected_result": "The system response references relevant keywords or context from the user's input."
+    },
+    {
+      "test_id": "T4",
+      "requirement_id": "FR4",
+      "scenario": "Non-Repetitive Responses",
+      "steps": [
+        "Open the app",
+        "Send multiple messages in sequence",
+        "Observe system responses"
+      ],
+      "expected_result": "No two consecutive responses are identical or semantically repetitive."
+    },
+    {
+      "test_id": "T5",
+      "requirement_id": "FR5",
+      "scenario": "Conversation Continuity",
+      "steps": [
+        "Open the app",
+        "Send a message",
+        "Send a follow-up message referencing the first message"
+      ],
+      "expected_result": "The system incorporates context from earlier messages in its response."
+    },
+    {
+      "test_id": "T6",
+      "requirement_id": "FR6",
+      "scenario": "App Stability During Use",
+      "steps": [
+        "Open the app",
+        "Navigate through multiple features",
+        "Send messages and interact with the app"
+      ],
+      "expected_result": "The application does not crash during usage."
+    },
+    {
+      "test_id": "T7",
+      "requirement_id": "FR7",
+      "scenario": "Conversation History Retention",
+      "steps": [
+        "Open the app",
+        "Send messages in a conversation",
+        "Close and reopen the app"
+      ],
+      "expected_result": "Previous messages remain accessible after reopening the app."
+    },
+    {
+      "test_id": "T8",
+      "requirement_id": "FR8",
+      "scenario": "System Performance Response Time",
+      "steps": [
+        "Open the app",
+        "Send a message",
+        "Measure response time"
+      ],
+      "expected_result": "The system responds within 3 seconds."
+    },
+    {
+      "test_id": "T9",
+      "requirement_id": "FR9",
+      "scenario": "Cross-Session Memory",
+      "steps": [
+        "Open the app",
+        "Have a conversation with the system",
+        "Close and reopen the app",
+        "Send a related message"
+      ],
+      "expected_result": "The system retains and uses relevant past interaction data."
+    },
+    {
+      "test_id": "T10",
+      "requirement_id": "FR10",
+      "scenario": "Coaching Feature Functionality",
+      "steps": [
+        "Open the app",
+        "Navigate to coaching feature",
+        "Attempt to use the feature"
+      ],
+      "expected_result": "The feature loads successfully and functions as intended."
+    },
+    {
+      "test_id": "T11",
+      "requirement_id": "FR11",
+      "scenario": "Multi-Language Support",
+      "steps": [
+        "Open the app",
+        "Change language settings",
+        "Send a message"
+      ],
+      "expected_result": "The system responds in the selected language."
+    },
+    {
+      "test_id": "T12",
+      "requirement_id": "FR12",
+      "scenario": "Non-Intrusive Onboarding",
+      "steps": [
+        "Open the app as a new user",
+        "Begin onboarding process",
+        "Skip optional questions"
+      ],
+      "expected_result": "The system allows skipping non-essential questions and proceeds to main functionality."
     }
   ]
 }

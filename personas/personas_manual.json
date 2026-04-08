@@ -1,22 +1,129 @@
-{  "personas": [
+{
+  "personas": [
     {
       "id": "P1",
-      "name": "Frequent Activity Tracker",
-      "description": "A user who relies on the app to log workouts frequently and expects stable performance.",
+      "name": "Emma",
+      "description": "A university student experiencing stress and anxiety who uses the app for emotional support and coping strategies.",
       "derived_from_group": "G1",
       "goals": [
-        "Track workouts consistently",
-        "Log activity quickly"      ],
+        "Manage anxiety and negative thoughts",
+        "Develop healthier coping mechanisms",
+        "Access support anytime without judgment"
+      ],
       "pain_points": [
-        "App crashes during logging",
-        "Workout data sometimes disappears"      ],
+        "Feels overwhelmed and anxious frequently",
+        "Struggles to find accessible mental health support",
+        "Needs immediate emotional relief during stressful moments"
+      ],
       "context": [
-        "Logging activities immediately after workouts",
-        "Using the app during outdoor exercise"      ],
+        "Using the app during stressful academic periods",
+        "Accessing support late at night or during emotional distress"
+      ],
       "constraints": [
-        "Logging must be reliable",
-        "Data should not be lost"       ],
-      "evidence_reviews": [
-        "rev_12",
-        "rev_45"      ]
-    }  ] }
+        "Support must be available instantly",
+        "Responses must feel supportive and relevant"
+      ],
+      "evidence_reviews": [0, 3, 7]
+    },
+    {
+      "id": "P2",
+      "name": "Liam",
+      "description": "A working professional seeking meaningful AI-driven conversations for emotional support.",
+      "derived_from_group": "G2",
+      "goals": [
+        "Have meaningful and relevant conversations with the AI",
+        "Receive personalized and context-aware responses",
+        "Feel understood during interactions"
+      ],
+      "pain_points": [
+        "AI responses feel repetitive or robotic",
+        "Conversations lack depth or relevance",
+        "Frustration when the AI ignores previous inputs"
+      ],
+      "context": [
+        "Using the app as a substitute for casual emotional support",
+        "Engaging in longer conversations expecting continuity"
+      ],
+      "constraints": [
+        "Responses must be context-aware",
+        "System must avoid repetitive outputs"
+      ],
+      "evidence_reviews": [8, 41, 120]
+    },
+    {
+      "id": "P3",
+      "name": "Sophia",
+      "description": "A busy professional who relies on the app for quick and reliable mental health support throughout the day.",
+      "derived_from_group": "G3",
+      "goals": [
+        "Access the app quickly without interruptions",
+        "Use features reliably without crashes",
+        "Maintain continuity in conversations"
+      ],
+      "pain_points": [
+        "App crashes or freezes during use",
+        "Slow response times",
+        "Loss of conversation history due to glitches"
+      ],
+      "context": [
+        "Using the app during short breaks",
+        "Accessing features while multitasking"
+      ],
+      "constraints": [
+        "System must be responsive",
+        "Data must not be lost during usage"
+      ],
+      "evidence_reviews": [18, 40, 48]
+    },
+    {
+      "id": "P4",
+      "name": "Noah",
+      "description": "A regular user exploring mental health tools who expects advanced and consistent app functionality.",
+      "derived_from_group": "G4",
+      "goals": [
+        "Have the app remember past conversations",
+        "Use structured features like coaching tools",
+        "Access more advanced functionality"
+      ],
+      "pain_points": [
+        "Lack of memory across conversations",
+        "Missing or underdeveloped features",
+        "Inconsistent functionality of tools"
+      ],
+      "context": [
+        "Using the app regularly over long periods",
+        "Exploring different features for self-improvement"
+      ],
+      "constraints": [
+        "Features must be consistent",
+        "System should retain relevant history"
+      ],
+      "evidence_reviews": [21, 93, 122]
+    },
+    {
+      "id": "P5",
+      "name": "Aisha",
+      "description": "A non-native English speaker who faces accessibility and usability challenges when using the app.",
+      "derived_from_group": "G5",
+      "goals": [
+        "Use the app in her preferred language",
+        "Navigate the app easily without confusion",
+        "Access support without intrusive onboarding"
+      ],
+      "pain_points": [
+        "Limited language support",
+        "Rigid or intrusive onboarding process",
+        "Difficulty understanding or navigating features"
+      ],
+      "context": [
+        "Using the app occasionally for support",
+        "Attempting to use features despite language barriers"
+      ],
+      "constraints": [
+        "Interface must be easy to understand",
+        "Support should not require complex onboarding"
+      ],
+      "evidence_reviews": [27, 130, 169]
+    }
+  ]
+}

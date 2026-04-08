@@ -3,13 +3,112 @@
     {
       "test_id": "T_auto_1",
       "requirement_id": "FR_auto_1",
-      "scenario": "Logging a workout without crashing",
+      "scenario": "Navigation Test",
       "steps": [
-        "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
+        "Launch the app and navigate to the homepage",
+        "Click on various features and menus",
+        "Observe the app's response and user experience"
       ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
+      "expected_result": "The user can easily find and access the desired features without difficulty"
+    },
+    {
+      "test_id": "T_auto_2",
+      "requirement_id": "FR_auto_2",
+      "scenario": "Stability Test",
+      "steps": [
+        "Launch the app and perform various actions",
+        "Switch between different features and menus",
+        "Monitor the app's performance and stability"
+      ],
+      "expected_result": "The app does not crash or freeze during usage"
+    },
+    {
+      "test_id": "T_auto_3",
+      "requirement_id": "FR_auto_3",
+      "scenario": "Customer Support Test",
+      "steps": [
+        "Simulate an issue with the app",
+        "Contact customer support through the app or website",
+        "Measure the response time and helpfulness of the support"
+      ],
+      "expected_result": "The user receives a helpful response from customer support within a reasonable timeframe"
+    },
+    {
+      "test_id": "T_auto_4",
+      "requirement_id": "FR_auto_4",
+      "scenario": "Low Internet Connection Test",
+      "steps": [
+        "Launch the app with a slow internet connection",
+        "Navigate through the app and perform various actions",
+        "Monitor the app's performance and loading times"
+      ],
+      "expected_result": "The app loads and functions without significant delays despite the slow internet connection"
+    },
+    {
+      "test_id": "T_auto_5",
+      "requirement_id": "FR_auto_5",
+      "scenario": "Feature Comparison Test",
+      "steps": [
+        "Launch the app and navigate to the feature comparison section",
+        "Compare features and pricing of different plans or options",
+        "Evaluate the clarity and understandability of the information"
+      ],
+      "expected_result": "The user can easily find and understand the feature comparison information"
+    },
+    {
+      "test_id": "T_auto_6",
+      "requirement_id": "FR_auto_6",
+      "scenario": "Review and Rating Test",
+      "steps": [
+        "Launch the app and navigate to the review and rating section",
+        "Read reviews and ratings from other users",
+        "Evaluate the accuracy and helpfulness of the reviews and ratings"
+      ],
+      "expected_result": "The user can trust the accuracy and helpfulness of the reviews and ratings"
+    },
+    {
+      "test_id": "T_auto_7",
+      "requirement_id": "FR_auto_7",
+      "scenario": "Feedback Submission Test",
+      "steps": [
+        "Launch the app and navigate to the feedback submission section",
+        "Submit feedback and suggestions for improvement",
+        "Verify that the feedback is received and acknowledged by the development team"
+      ],
+      "expected_result": "The feedback is received and considered by the development team"
+    },
+    {
+      "test_id": "T_auto_8",
+      "requirement_id": "FR_auto_8",
+      "scenario": "Update and Improvement Test",
+      "steps": [
+        "Launch the app and navigate to the update history section",
+        "Evaluate the frequency and quality of updates and improvements",
+        "Verify that the app is updated with new features and improvements"
+      ],
+      "expected_result": "The app is updated with new features and improvements based on user feedback"
+    },
+    {
+      "test_id": "T_auto_9",
+      "requirement_id": "FR_auto_9",
+      "scenario": "Pricing Option Test",
+      "steps": [
+        "Launch the app and navigate to the pricing section",
+        "Evaluate the pricing options and plans available",
+        "Verify that the pricing options are affordable and suitable for different user needs"
+      ],
+      "expected_result": "The user can find a suitable and affordable pricing option"
+    },
+    {
+      "test_id": "T_auto_10",
+      "requirement_id": "FR_auto_10",
+      "scenario": "Accessibility Feature Test",
+      "steps": [
+        "Launch the app and navigate to the accessibility feature section",
+        "Enable and use the accessibility features",
+        "Evaluate the effectiveness and usability of the accessibility features"
+      ],
+      "expected_result": "The user can access and utilize the accessibility features without difficulty"
     }
   ]
 }

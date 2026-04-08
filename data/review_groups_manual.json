@@ -2,11 +2,48 @@
   "groups": [
     {
       "group_id": "G1",
-      "theme": "App crashes during activity logging, THIS IS A AN EXAMPLE, PLEASE REMOVE ",
-      "review_ids": ["rev_12", "rev_33", "rev_45", "rev_89"],
+      "theme": "Positive Mental Health Support Experience",
+      "review_ids": [0, 2, 3, 4, 6, 7, 9, 10, 12, 14, 22, 24, 34, 36],
       "example_reviews": [
-        "The app crashes every time I log my run.",
-        "Logging workouts causes the app to freeze."
+        "fantastic app truly helpful supporting one work problem find solution",
+        "really helped turn negative thought positive mindset"
+      ]
+    },
+    {
+      "group_id": "G2",
+      "theme": "AI Interaction Quality Issues",
+      "review_ids": [8, 26, 37, 41, 94, 96, 120, 143, 144, 193, 195, 259, 263, 295],
+      "example_reviews": [
+        "slow unoptimized response feel robotic relevant said",
+        "ai chat give useful insight keep repeating thing helpful way frustrating"
+      ]
+    },
+    {
+      "group_id": "G3",
+      "theme": "Performance and Technical Issues",
+      "review_ids": [18, 19, 40, 43, 48, 50, 59, 61, 64, 77, 85, 88],
+      "example_reviews": [
+        "downloaded two time time app work",
+        "kept glitching saying check erasing long conversation"
+      ]
+    },
+    {
+      "group_id": "G4",
+      "theme": "Feature Limitations and Missing Functionality",
+      "review_ids": [21, 23, 81, 93, 97, 104, 122, 170, 177, 205],
+      "example_reviews": [
+        "really good app would better remembers every conversation",
+        "appointment coach show"
+      ]
+    },
+    {
+      "group_id": "G5",
+      "theme": "Accessibility and Usability Barriers",
+      "review_ids": [27, 33, 119, 130, 152, 162, 169, 187, 190, 210],
+      "example_reviews": [
+        "please update ai speak language besides english indonesian",
+        "intake process service frustratingly rigid intrusive demand personal data"
       ]
     }
-  ]}
+  ]
+}
