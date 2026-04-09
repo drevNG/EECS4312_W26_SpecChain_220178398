@@ -7,7 +7,7 @@
       "derived_from_group": "G1",
       "goals": [
         "enjoy using the app",
-        "find it easy to use"
+        "find relevant content"
       ],
       "pain_points": [
         "none",
@@ -15,15 +15,15 @@
       ],
       "context": [
         "uses the app daily",
-        "has a positive overall experience"
-      ],
-      "constraints": [
-        "none",
         "has a stable internet connection"
       ],
+      "constraints": [
+        "limited time to explore new features",
+        "expects a user-friendly interface"
+      ],
       "evidence_reviews": [
+        0,
         1,
-        2,
         3
       ]
     },
@@ -33,106 +33,106 @@
       "description": "A frustrated user who has had negative experiences",
       "derived_from_group": "G2",
       "goals": [
-        "get the app to work properly",
-        "resolve issues quickly"
+        "get help with issues",
+        "improve overall experience"
       ],
       "pain_points": [
-        "frequent crashes",
+        "frequent errors",
         "poor customer support"
       ],
       "context": [
-        "uses the app occasionally",
-        "has a negative overall experience"
+        "uses the app sporadically",
+        "has experienced technical difficulties"
       ],
       "constraints": [
-        "limited technical knowledge",
-        "has a slow internet connection"
+        "limited patience for troubleshooting",
+        "expects prompt resolutions"
       ],
       "evidence_reviews": [
-        0,
         5,
-        49
+        7,
+        22
       ]
     },
     {
       "id": "P3",
       "name": "Sophia Patel",
-      "description": "A comparative user who evaluates the app against others",
+      "description": "An innovative user who provides suggestions and ideas",
       "derived_from_group": "G3",
       "goals": [
-        "find the best app for their needs",
-        "compare features and pricing"
+        "contribute to the app's improvement",
+        "see new features implemented"
       ],
       "pain_points": [
-        "difficulty finding the right app",
-        "overwhelming number of options"
+        "lack of certain features",
+        "limited customization options"
       ],
       "context": [
-        "researches and compares apps regularly",
-        "values objective reviews"
+        "uses the app regularly",
+        "has a strong opinion about its development"
       ],
       "constraints": [
-        "limited time to research",
-        "has specific requirements for the app"
+        "limited technical expertise",
+        "expects feedback on suggestions"
       ],
       "evidence_reviews": [
-        13,
-        14,
-        113
+        11,
+        51,
+        91
       ]
     },
     {
       "id": "P4",
-      "name": "Michael Kim",
-      "description": "A suggestive user who provides feedback for improvement",
+      "name": "Ethan Kim",
+      "description": "A tech-savvy user who encounters technical issues",
       "derived_from_group": "G4",
       "goals": [
-        "improve the app's functionality",
-        "enhance user experience"
+        "resolve technical problems",
+        "improve app performance"
       ],
       "pain_points": [
-        "lack of certain features",
-        "user interface issues"
+        "bugs and glitches",
+        "inconsistent behavior"
       ],
       "context": [
-        "uses the app regularly and provides feedback",
-        "values continuous improvement"
+        "uses the app frequently",
+        "has a strong technical background"
       ],
       "constraints": [
-        "limited technical expertise",
-        "has high expectations for the app"
+        "limited time for troubleshooting",
+        "expects detailed error messages"
       ],
       "evidence_reviews": [
-        37,
-        36,
-        75
+        5,
+        7,
+        37
       ]
     },
     {
       "id": "P5",
       "name": "Olivia Brown",
-      "description": "A budget-conscious user who considers pricing and accessibility",
+      "description": "A design-conscious user who values app features and design",
       "derived_from_group": "G5",
       "goals": [
-        "find an affordable app",
-        "ensure accessibility features are available"
+        "enjoy a visually appealing interface",
+        "discover new features"
       ],
       "pain_points": [
-        "high pricing",
-        "lack of accessibility features"
+        "outdated design",
+        "cluttered layout"
       ],
       "context": [
-        "has a limited budget",
-        "values apps that cater to diverse needs"
+        "uses the app regularly",
+        "has a strong interest in design"
       ],
       "constraints": [
-        "limited financial resources",
-        "requires specific accessibility features"
+        "limited patience for complex navigation",
+        "expects intuitive interactions"
       ],
       "evidence_reviews": [
+        84,
         34,
-        39,
-        82
+        58
       ]
     }
   ]

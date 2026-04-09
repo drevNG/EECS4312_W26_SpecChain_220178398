@@ -3,14 +3,121 @@
     {
       "test_id": "T_hybrid_1",
       "requirement_id": "FR_hybrid_1",
-      "scenario": "Save a workout entry without crashing",
+      "scenario": "Emotional support response test",
       "steps": [
-        "Open the workout logging feature",
-        "Enter workout information",
-        "Submit the workout"
+        "Input a message expressing stress or anxiety",
+        "Submit the message to the system",
+        "Observe the system response"
       ],
-      "expected_result": "The workout is saved successfully and the application does not crash.",
-      "notes": "Revised the expected result to match the updated hybrid requirement."
+      "expected_result": "The response acknowledges the user's emotion and provides at least one relevant coping suggestion.",
+      "notes": "Updated to verify emotional acknowledgment and actionable support."
+    },
+    {
+      "test_id": "T_hybrid_2",
+      "requirement_id": "FR_hybrid_2",
+      "scenario": "Application stability during usage",
+      "steps": [
+        "Launch the app",
+        "Use core features continuously for 5 minutes",
+        "Monitor application behavior"
+      ],
+      "expected_result": "The application does not crash or freeze during the test duration.",
+      "notes": "Rewritten to include measurable time-based condition."
+    },
+    {
+      "test_id": "T_hybrid_3",
+      "requirement_id": "FR_hybrid_3",
+      "scenario": "Conversation data persistence",
+      "steps": [
+        "Start a conversation with the system",
+        "Send multiple messages",
+        "Check if previous messages remain visible"
+      ],
+      "expected_result": "All messages remain visible and are not lost during the session.",
+      "notes": "Aligned with requirement on preventing data loss."
+    },
+    {
+      "test_id": "T_hybrid_4",
+      "requirement_id": "FR_hybrid_4",
+      "scenario": "Error recovery without data loss",
+      "steps": [
+        "Start a conversation",
+        "Simulate a temporary error (e.g., disconnect network briefly)",
+        "Resume interaction"
+      ],
+      "expected_result": "Previous conversation data remains accessible after recovery.",
+      "notes": "Ensures graceful recovery is testable."
+    },
+    {
+      "test_id": "T_hybrid_5",
+      "requirement_id": "FR_hybrid_5",
+      "scenario": "Context-aware response test",
+      "steps": [
+        "Start a conversation",
+        "Provide a sequence of related messages",
+        "Observe system responses"
+      ],
+      "expected_result": "Responses reflect and align with previous user inputs in the conversation.",
+      "notes": "Tests contextual relevance across multiple turns."
+    },
+    {
+      "test_id": "T_hybrid_6",
+      "requirement_id": "FR_hybrid_6",
+      "scenario": "Avoid repeated responses",
+      "steps": [
+        "Send different inputs to the system",
+        "Observe responses over multiple turns"
+      ],
+      "expected_result": "The system does not repeat identical responses more than once.",
+      "notes": "Converted vague repetition issue into measurable constraint."
+    },
+    {
+      "test_id": "T_hybrid_7",
+      "requirement_id": "FR_hybrid_7",
+      "scenario": "Conversation history retrieval",
+      "steps": [
+        "Start a conversation and send messages",
+        "Close the app",
+        "Reopen the app"
+      ],
+      "expected_result": "Previous conversations are accessible after reopening the app.",
+      "notes": "Aligned with requirement for persistent conversation history."
+    },
+    {
+      "test_id": "T_hybrid_8",
+      "requirement_id": "FR_hybrid_8",
+      "scenario": "Language support test",
+      "steps": [
+        "Change the app language setting",
+        "Send a message in the selected language",
+        "Observe system response"
+      ],
+      "expected_result": "The system responds in the selected language.",
+      "notes": "Ensures language selection affects system output."
+    },
+    {
+      "test_id": "T_hybrid_9",
+      "requirement_id": "FR_hybrid_9",
+      "scenario": "Skip onboarding questions",
+      "steps": [
+        "Launch the app for the first time",
+        "Proceed through onboarding",
+        "Attempt to skip optional questions"
+      ],
+      "expected_result": "User is able to skip optional onboarding questions.",
+      "notes": "Makes onboarding flexibility testable."
+    },
+    {
+      "test_id": "T_hybrid_10",
+      "requirement_id": "FR_hybrid_10",
+      "scenario": "Access core features efficiently",
+      "steps": [
+        "Launch the app",
+        "Navigate to a core feature",
+        "Count number of steps taken"
+      ],
+      "expected_result": "Core features are accessible within 3 steps or fewer.",
+      "notes": "Replaced vague usability with measurable navigation constraint."
     }
   ]
 }

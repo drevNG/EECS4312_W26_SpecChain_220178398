@@ -1,13 +1,54 @@
-{  "groups": [
+{
+  "groups": [
     {
       "group_id": "H1",
-      "theme": "Workout logging failures during activity tracking",
-      "review_ids": ["rev_12", "rev_33", "rev_41", "rev_92"],
+      "theme": "Positive emotional support and mental health benefits",
+      "review_ids": [1, 2, 3, 6, 9, 10, 11, 12, 15, 16],
       "example_reviews": [
-        "The app crashes whenever I try to log a run.",
-        "Logging workouts causes the app to freeze."
+        "fantastic app truly helpful supporting one work problem find solution",
+        "really helped turn negative thought positive mindset"
       ],
-      "notes": "Removed one unrelated review about login problems from the original automated group."
+      "notes": "Refined overly broad positive group by focusing specifically on emotional support and removed unrelated or duplicate reviews."
+    },
+    {
+      "group_id": "H2",
+      "theme": "Technical issues including crashes, glitches, and data loss",
+      "review_ids": [0, 5, 49, 50, 51, 52],
+      "example_reviews": [
+        "kept glitching saying check erasing long conversation",
+        "downloaded two time time app work"
+      ],
+      "notes": "Narrowed negative group to only include performance-related issues such as crashes and glitches."
+    },
+    {
+      "group_id": "H3",
+      "theme": "AI responses feel repetitive, irrelevant, or robotic",
+      "review_ids": [30, 31, 32, 33, 35, 36],
+      "example_reviews": [
+        "slow unoptimized response feel robotic relevant said",
+        "ai chat give useful insight keep repeating thing frustrating"
+      ],
+      "notes": "Separated chatbot quality issues from general feedback to create a more precise grouping."
+    },
+    {
+      "group_id": "H4",
+      "theme": "Feature requests and missing functionality",
+      "review_ids": [40, 55, 75, 93],
+      "example_reviews": [
+        "really good app would better remembers every conversation",
+        "please update ai speak language besides english"
+      ],
+      "notes": "Focused on explicit user suggestions for improvements and removed overlapping reviews from other groups."
+    },
+    {
+      "group_id": "H5",
+      "theme": "Accessibility and usability barriers (language and onboarding)",
+      "review_ids": [34, 56, 82],
+      "example_reviews": [
+        "intake process frustratingly rigid intrusive demand personal data",
+        "please update ai speak language besides english indonesian"
+      ],
+      "notes": "Clarified mixed group by focusing specifically on accessibility and onboarding challenges."
     }
   ]
 }

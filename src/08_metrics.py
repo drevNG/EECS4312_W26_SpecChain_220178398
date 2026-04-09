@@ -11,6 +11,10 @@ SPEC_PATH = os.path.join(BASE_DIR, "spec", "spec_auto.md")
 TEST_PATH = os.path.join(BASE_DIR, "tests", "tests_auto.json")
 OUTPUT_PATH = os.path.join(BASE_DIR, "metrics", "metrics_auto.json")
 
+# PERSONA_PATH = os.path.join(BASE_DIR, "personas", "personas_hybrid.json")
+# SPEC_PATH = os.path.join(BASE_DIR, "spec", "spec_hybrid.md")
+# TEST_PATH = os.path.join(BASE_DIR, "tests", "tests_hybrid.json")
+# OUTPUT_PATH = os.path.join(BASE_DIR, "metrics", "metrics_hybrid.json")
 
 def count_dataset():
     with open(CLEAN_PATH, "r", encoding="utf-8") as f:
@@ -26,6 +30,7 @@ def count_requirements():
     with open(SPEC_PATH, "r", encoding="utf-8") as f:
         text = f.read()
     return len(re.findall(r'# Requirement ID:', text))
+    # return len(re.findall(r'FR_hybrid_\d+', text))
 
 
 def count_tests():
@@ -60,13 +65,15 @@ def ambiguity_ratio():
 
 
 def review_coverage():
-    # assume sample-based grouping → partial coverage
-    return 0.2
+    total_reviews = count_dataset()
+    sampled_reviews = 120
+    return round(sampled_reviews / total_reviews, 2)
 
 
 def main():
     metrics = {
         "pipeline": "automated",
+        # "pipeline": "hybrid",
         "dataset_size": count_dataset(),
         "persona_count": count_personas(),
         "requirements_count": count_requirements(),
@@ -84,6 +91,7 @@ def main():
         json.dump(metrics, f, indent=2)
 
     print("Auto metrics saved.")
+    # print("Hybrid metrics saved.")
 
 
 if __name__ == "__main__":

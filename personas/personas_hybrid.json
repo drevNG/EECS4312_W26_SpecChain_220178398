@@ -2,30 +2,130 @@
   "personas": [
     {
       "id": "P_hybrid_1",
-      "name": "Frequent Fitness Logger",
-      "description": "A user who depends on the app for regular workout tracking and expects logging to work reliably during or immediately after exercise.",
+      "name": "Emily Wilson",
+      "description": "A user experiencing stress or anxiety who relies on the app for emotional support and practical coping strategies.",
       "derived_from_group": "H1",
       "goals": [
-        "Log workouts quickly",
-        "Track activities without interruption"
+        "Manage negative thoughts and emotions",
+        "Receive supportive and helpful guidance",
+        "Feel better after using the app"
       ],
       "pain_points": [
-        "The app crashes while saving workouts",
-        "Previously entered activity data may disappear"
+        "Struggles with anxiety and overthinking",
+        "Needs accessible and immediate emotional support",
+        "May feel overwhelmed without guidance"
       ],
       "context": [
-        "Using the app during exercise sessions",
-        "Using the app outdoors or while moving"
+        "Using the app during stressful or emotional moments",
+        "Accessing support at any time of day"
       ],
       "constraints": [
-        "Workout logging must complete without crashing",
-        "Saved workout data must persist"
+        "Support must be available instantly",
+        "Responses must feel supportive and relevant"
       ],
-      "evidence_reviews": [
-        "rev_12",
-        "rev_41"
+      "evidence_reviews": [1, 2, 3],
+      "notes": "Replaced vague description with specific mental health use case and grounded goals in review evidence."
+    },
+    {
+      "id": "P_hybrid_2",
+      "name": "David Lee",
+      "description": "A frustrated user who encounters technical issues such as crashes, glitches, and data loss while using the app.",
+      "derived_from_group": "H2",
+      "goals": [
+        "Use the app without crashes or interruptions",
+        "Ensure conversations and data are saved properly"
       ],
-      "notes": "Refined the persona description and removed an unsupported assumption about synchronization."
+      "pain_points": [
+        "App crashes or freezes during use",
+        "Loss of conversation history",
+        "Unreliable performance"
+      ],
+      "context": [
+        "Using the app casually or during moments of need",
+        "Experiencing interruptions during interactions"
+      ],
+      "constraints": [
+        "App must remain stable during use",
+        "User data must not be lost"
+      ],
+      "evidence_reviews": [0, 5, 49],
+      "notes": "Focused persona on technical reliability issues and removed unsupported assumptions like customer support concerns."
+    },
+    {
+      "id": "P_hybrid_3",
+      "name": "Sophia Patel",
+      "description": "A user seeking meaningful and responsive AI conversations for emotional support.",
+      "derived_from_group": "H3",
+      "goals": [
+        "Have natural and relevant conversations with the AI",
+        "Receive responses that reflect what was said",
+        "Feel understood during interactions"
+      ],
+      "pain_points": [
+        "AI responses feel repetitive or robotic",
+        "Responses do not match user input",
+        "Frustration with lack of conversational depth"
+      ],
+      "context": [
+        "Engaging in multi-turn conversations with the chatbot",
+        "Using the app as a substitute for talking to someone"
+      ],
+      "constraints": [
+        "Responses must be context-aware",
+        "System should avoid repetition"
+      ],
+      "evidence_reviews": [30, 31, 32],
+      "notes": "Clarified chatbot-specific issues and removed unrelated comparison-based assumptions."
+    },
+    {
+      "id": "P_hybrid_4",
+      "name": "Michael Kim",
+      "description": "A regular user who identifies missing features and suggests improvements to enhance the app experience.",
+      "derived_from_group": "H4",
+      "goals": [
+        "See improvements in app functionality",
+        "Have features that better support long-term use"
+      ],
+      "pain_points": [
+        "Missing features such as memory of past conversations",
+        "Limited functionality in certain tools"
+      ],
+      "context": [
+        "Using the app repeatedly over time",
+        "Exploring different features and capabilities"
+      ],
+      "constraints": [
+        "New features must be implemented reliably",
+        "Existing functionality should not break"
+      ],
+      "evidence_reviews": [40, 55, 75],
+      "notes": "Refined persona to focus on concrete feature requests rather than vague improvement ideas."
+    },
+    {
+      "id": "P_hybrid_5",
+      "name": "Olivia Brown",
+      "description": "A user facing accessibility and usability challenges, particularly related to language support and onboarding complexity.",
+      "derived_from_group": "H5",
+      "goals": [
+        "Use the app in a preferred language",
+        "Access support without complicated setup",
+        "Understand and navigate the app easily"
+      ],
+      "pain_points": [
+        "Limited language support",
+        "Intrusive or rigid onboarding process",
+        "Difficulty understanding app features"
+      ],
+      "context": [
+        "Using the app occasionally for support",
+        "Trying to use the app despite usability barriers"
+      ],
+      "constraints": [
+        "Interface must be simple and intuitive",
+        "Support should not require extensive setup"
+      ],
+      "evidence_reviews": [34, 56, 82],
+      "notes": "Clarified accessibility focus and removed unsupported assumptions about pricing."
     }
   ]
 }
