@@ -50,7 +50,7 @@ def call_llm(prompt):
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[{"role": "user", "content": prompt}],
-        temperature=0.3
+        temperature=0.3,
     )
     return response.choices[0].message.content
 
@@ -66,7 +66,7 @@ def main():
     print("LLM response received")
 
     # Clean response (remove anything before first requirement)
-    match = re.search(r'# Requirement ID:.*', response, re.DOTALL)
+    match = re.search(r"# Requirement ID:.*", response, re.DOTALL)
 
     if not match:
         print("ERROR: No valid requirements found")

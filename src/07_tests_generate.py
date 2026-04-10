@@ -51,9 +51,9 @@ REQUIREMENTS:
 
 def call_llm(prompt):
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="llama-3.3-70b-versatile",  # this model was used since meta-llama/llama-4-scout-17b-16e-instruct was not working
         messages=[{"role": "user", "content": prompt}],
-        temperature=0.3
+        temperature=0.3,
     )
     return response.choices[0].message.content
 
@@ -68,7 +68,7 @@ def main():
     response = call_llm(prompt)
     print("LLM response received")
 
-    match = re.search(r'\{.*\}', response, re.DOTALL)
+    match = re.search(r"\{.*\}", response, re.DOTALL)
 
     if not match:
         print("ERROR: No JSON found")

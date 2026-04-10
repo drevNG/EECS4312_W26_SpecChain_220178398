@@ -16,6 +16,7 @@ OUTPUT_PATH = os.path.join(BASE_DIR, "metrics", "metrics_auto.json")
 # TEST_PATH = os.path.join(BASE_DIR, "tests", "tests_hybrid.json")
 # OUTPUT_PATH = os.path.join(BASE_DIR, "metrics", "metrics_hybrid.json")
 
+
 def count_dataset():
     with open(CLEAN_PATH, "r", encoding="utf-8") as f:
         return sum(1 for _ in f)
@@ -29,7 +30,7 @@ def count_personas():
 def count_requirements():
     with open(SPEC_PATH, "r", encoding="utf-8") as f:
         text = f.read()
-    return len(re.findall(r'# Requirement ID:', text))
+    return len(re.findall(r"# Requirement ID:", text))
     # return len(re.findall(r'FR_hybrid_\d+', text))
 
 
@@ -57,7 +58,15 @@ def ambiguity_ratio():
     with open(SPEC_PATH, "r", encoding="utf-8") as f:
         text = f.read().lower()
 
-    vague_words = ["easy", "easily", "fast", "better", "user-friendly", "reasonable", "affordable"]
+    vague_words = [
+        "easy",
+        "easily",
+        "fast",
+        "better",
+        "user-friendly",
+        "reasonable",
+        "affordable",
+    ]
     ambiguous = sum(1 for word in vague_words if word in text)
 
     total_reqs = count_requirements()
@@ -82,7 +91,7 @@ def main():
         "review_coverage": review_coverage(),
         "traceability_ratio": traceability_ratio(),
         "testability_rate": round(testability_rate(), 2),
-        "ambiguity_ratio": ambiguity_ratio()
+        "ambiguity_ratio": ambiguity_ratio(),
     }
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)

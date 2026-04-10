@@ -60,7 +60,7 @@ def call_llm(prompt):
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[{"role": "user", "content": prompt}],
-        temperature=0.3
+        temperature=0.3,
     )
 
     return response.choices[0].message.content
@@ -78,6 +78,7 @@ def map_reviews_to_ids(groups, original_reviews):
         del group["reviews"]
 
     return groups
+
 
 def build_persona_prompt(groups):
     prompt = f"""
@@ -114,6 +115,7 @@ GROUPS:
 """
     return prompt
 
+
 def main():
     print("Starting script...")
 
@@ -136,7 +138,8 @@ def main():
     print(response[:500])  # preview response
 
     import re
-    match = re.search(r'\{.*\}', response, re.DOTALL)
+
+    match = re.search(r"\{.*\}", response, re.DOTALL)
 
     if not match:
         print("ERROR: No JSON found in response")
@@ -156,7 +159,7 @@ def main():
 
     print("Auto review groups saved.")
 
-        # ===== Generate Personas =====
+    # ===== Generate Personas =====
     print("Generating personas...")
 
     persona_prompt = build_persona_prompt(groups)
@@ -164,7 +167,7 @@ def main():
     persona_response = call_llm(persona_prompt)
     print("LLM persona response received")
 
-    match = re.search(r'\{.*\}', persona_response, re.DOTALL)
+    match = re.search(r"\{.*\}", persona_response, re.DOTALL)
 
     if not match:
         print("ERROR: No JSON found in persona response")
@@ -180,6 +183,7 @@ def main():
         json.dump(personas_json, f, indent=2)
 
     print("Auto personas saved.")
+
 
 if __name__ == "__main__":
     main()

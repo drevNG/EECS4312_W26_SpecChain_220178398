@@ -1,4 +1,5 @@
 """cleans raw data & make clean dataset"""
+
 import json
 import re
 import os
@@ -7,7 +8,7 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 # Initialize tools
-stop_words = set(stopwords.words('english'))
+stop_words = set(stopwords.words("english"))
 lemmatizer = WordNetLemmatizer()
 
 
@@ -25,13 +26,13 @@ def clean_text(text):
         except:
             return ""
 
-    text = re.sub(r'\d+', replace_numbers, text)
+    text = re.sub(r"\d+", replace_numbers, text)
 
     # Remove punctuation & special characters (keep letters and spaces)
-    text = re.sub(r'[^a-z\s]', ' ', text)
+    text = re.sub(r"[^a-z\s]", " ", text)
 
     # Remove extra whitespace
-    text = re.sub(r'\s+', ' ', text).strip()
+    text = re.sub(r"\s+", " ", text).strip()
 
     # Tokenize
     words = text.split()
@@ -52,7 +53,7 @@ def clean_dataset(input_file, output_file):
     seen_texts = set()
     cleaned_data = []
 
-    with open(input_file, 'r', encoding='utf-8') as f:
+    with open(input_file, "r", encoding="utf-8") as f:
         for line in f:
             review = json.loads(line)
             raw_text = review.get("text", "").strip()
@@ -73,13 +74,12 @@ def clean_dataset(input_file, output_file):
 
             seen_texts.add(cleaned_text)
 
-            cleaned_data.append({
-                "review_id": review.get("review_id"),
-                "text": cleaned_text
-            })
+            cleaned_data.append(
+                {"review_id": review.get("review_id"), "text": cleaned_text}
+            )
 
     # Save JSONL
-    with open(output_file, 'w', encoding='utf-8') as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         for item in cleaned_data:
             f.write(json.dumps(item) + "\n")
 
@@ -89,8 +89,8 @@ def clean_dataset(input_file, output_file):
 def main():
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-    input_path = os.path.join(BASE_DIR, 'data', 'reviews_raw.jsonl')
-    output_path = os.path.join(BASE_DIR, 'data', 'reviews_clean.jsonl')
+    input_path = os.path.join(BASE_DIR, "data", "reviews_raw.jsonl")
+    output_path = os.path.join(BASE_DIR, "data", "reviews_clean.jsonl")
 
     clean_dataset(input_path, output_path)
 

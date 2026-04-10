@@ -9,23 +9,18 @@ REQUIRED_FILES = [
     "data/reviews_clean.jsonl",
     "data/review_groups_auto.json",
     "data/review_groups_hybrid.json",
-
     "personas/personas_manual.json",
     "personas/personas_auto.json",
     "personas/personas_hybrid.json",
-
     "spec/spec_auto.md",
     "spec/spec_hybrid.md",
-
     "tests/tests_auto.json",
     "tests/tests_hybrid.json",
-
     "metrics/metrics_manual.json",
     "metrics/metrics_auto.json",
     "metrics/metrics_hybrid.json",
     "metrics/metrics_summary.json",
-
-    "prompts/prompt_auto.json"
+    "prompts/prompt_auto.json",
 ]
 
 
